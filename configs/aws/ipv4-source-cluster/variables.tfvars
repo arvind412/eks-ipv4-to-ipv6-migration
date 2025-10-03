@@ -1,0 +1,17 @@
+create_vpc = false
+vpc_id = "vpc-04d804437ea874217"
+public_subnet_ids = ["subnet-0156fdfea068c7bc8", "subnet-02a60452a1ff11709"]
+private_subnet_ids = ["subnet-0879545114322f726", "subnet-05c4c7c37d2f629de"]
+enable_ipv6 = false
+cluster_name = "verizon-poc-ipv4-source-cluster"
+cluster_sg_id = "sg-01d5cbc41da260193"
+cluster_role_name = "eksclusterrole-default"
+cluster_admin_iam_roles = ["arn:aws:iam::191124798140:user/George.Davy@visionet.com"]
+node_sg_id = "sg-01d5cbc41da260193"
+node_role_name = "AmazonEKSNodeRole"
+node_group_name = "system"
+node_instance_type = "t3.medium"
+ssh_key_name = "new-ipv6"
+desired_capacity = 1
+min_size = 1
+max_size = 2
